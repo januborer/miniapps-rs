@@ -1,0 +1,19 @@
+warning: unused imports: `error::Error`, `fs`
+ --> src/main.rs:2:16
+  |
+2 | use std::{env, error::Error, fs, process};
+  |                ^^^^^^^^^^^^  ^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: function is never used: `parse_config`
+  --> src/main.rs:24:4
+   |
+24 | fn parse_config(args: &[String]) -> Config {
+   |    ^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: `minigrep` (bin "minigrep") generated 2 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 0.03s
+     Running `target/debug/minigrep re poem.txt`
